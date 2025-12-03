@@ -42,20 +42,14 @@ def matrix_mult(matrix, vector):
 def sigmoid(scalar): 
     return 1/(1+np.e**(-scalar))
 
+
+
 #----------------------------Main logic--------------------------------
 
 hidden_1 = Neuron() # First neuron of hidden layer. Contains 2 weights and one bias
 hidden_2 = Neuron() # Second neuron of hidden layer. Contains 2 weights and one bias
 out = Neuron() # Output neuron. 1 connection between each of the 2 previous neuron (2 weights) and a final bias. 
-
-all_hidden_weights = np.stack((hidden_1.weights, hidden_2.weights), axis=0) # 2x2 numpy matrix. 1st row has all weights for 1st neuron. 2nd row has all weights for 2nd neuron.  
-all_hidden_biases = np.stack((hidden_1.bias, hidden_2.bias), axis=0) # Should be 1x2
-
-net = Network(all_hidden_weights, all_hidden_biases, out.weights, out.bias)
-
-
-print(net.forward([1,0]))
-
+   
 
 
 
