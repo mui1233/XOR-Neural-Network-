@@ -26,8 +26,7 @@ class Network: # Will be responsible for forward and backward pass.
         return output
     
     def backward(self,input): 
-        pass
-
+        print()
 
 
 def matrix_mult(matrix, vector):
@@ -51,7 +50,9 @@ hidden_2 = Neuron() # Second neuron of hidden layer. Contains 2 weights and one 
 out = Neuron() # Output neuron. 1 connection between each of the 2 previous neuron (2 weights) and a final bias. 
    
 
-
+print()
+print()
+print()
 
 
 
